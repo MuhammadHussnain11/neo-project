@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - NEO</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper" class="position-relative w-100 overflow-hidden">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <nav class="navbar navbar-expand-xl py-4">
+                <div class="container">
+                    <a class="navbar-brand d-flex justify-content-between align-items-center order-xl-0"
+                        href="./index.html">
+                        <div class="imgBox">
+                            <img src="./assets/images/logo.svg" alt="logo">
+                        </div>
+                    </a>
+
+                    <div class="order-xl-2 nav-btns">
+                        <!-- <a href="#"> -->
+                        <button type="button" class="btn" id="searchIcon">
+                            <div class="imgBox">
+                                <img src="./assets/images/search.png" alt="search">
+                            </div>
+                        </button>
+
+                        <!-- </a> -->
+                        <button type="button" class="btn position-relative" id="cartBoxIcon">
+                            <div class="imgBox cart__icon" >
+                                <img src="./assets/images/shopping_bag.png" alt="cart">
+                            </div>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        </button>
+                        <div id="navLinks">
+
+                            <button class="btn">
+                                <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
+                            </button>
+                            <button type="button" class="btn" id="lang__btn">
+                                DA
+                                <i class="fa-solid fa-angle-down"></i>
+                                <div class="select__lang" id="lang__container">
+                                    <ul>
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Urdu</a></li>
+                                        <li><a href="#">Arabic</a></li>
+                                    </ul>
+                                </div>
+                            </button>
+                            <button type="button" class="btn" id="user__profile">
+                                <img src="./assets/images/profile.png" alt="profile-image">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <div class="profile__container" id="profile__container">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                        <li><a href="#"><i class="fa fa-gear"></i>Settings</a></li>
+                                        <li><a href="#"><i class="fa fa-right-from-bracket"></i>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-xl-1" id="navMenu">
+                        <ul class="navbar-nav m-auto text-center">
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white active" href="./Magasine.html">Artikler</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white"
+                                    href="./Videos_Archive.html">Videos</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Podcasts_Archive.html">Podcast</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="#">Events</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Shop_Overview.html">Shop</a>
+                            </li>
+                            <div id="mobNavLinks" class="nav-btns pt-4">
+                                <button type="button" class="btn"> 319959
+                                    <select class="select-lang bg-transparent border-0 text-white" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option selected="1">DA</option>
+                                        <option value="2">EN</option>
+                                        <option value="3">AE</option>
+                                    </select>
+                                </button>
+                                <button class="btn" >
+                                    <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
+                                </button>
+                                <button type="button" class="btn login__profile">
+                                    <img src="./assets/images/profile.png" alt="profile-image">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="cart__box" id="cart__box">
+                <!-- <div class="cart__box__header d-flex justify-content-between align-items-center">
+                    <h4>Shopping Cart</h4>
+                    <a href="#" id="closeCart">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div> -->
+                <div class="cart__box__body">
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="cart__box__footer">
+                    <div class="cart__box__footer__total">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>798,00 dkk</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Levering</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>Gratis</p>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Pris i alt</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>798,00 dkk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href=""><button class="btn2" type="button">Gå til kassen</button></a>
+                    <div  class="text-center py-3">
+                        <a href="./Shop_Overview.html">Shop videre</a>
+                    </div>
+                    
+
+                </div>
+
+
+                
+            </div>
+
+        </header>
+
+        <!-- End Header -->
+
+
+        <!-- Banner -->
+        <div class="banner vh-100"
+            style="background-image: url(./assets/images/banner-magazine.png); background-position: center;">
+            <div class="container h-100 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <h1 class="lh-1">The NEO'S</h1>
+                    <h1 class="sec__font lh-1 fst-italic">Magazines</h1>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <main>
+
+            <section>
+                <div class="container py-5">
+                    <div class="row g-3 justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="lh-1">Behind The</h1>
+                            <h1 class="sec__font lh-1 fst-italic">Headlines</h1>
+                        </div>
+                        <div class="col-md-5">
+                            <p>The podcast that explores the hidden stories, fascinating details, and surprising
+                                connections behind the things we often take for granted. Join us as we dive deep into a
+                                different topic each episode, uncovering what's really going on beneath the surface.
+                                With expert guests and unique perspectives, we'll challenge ourselves to see the world
+                                in a new light. Come along for the ride, and let's discover what lies beyond the surface
+                                together.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="row flex-wrap-reverse bg-card rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
+                                <div class="col-lg-4">
+                                    <div class="row p-0 p-sm-4 h-100 flex-column justify-content-between">
+                                        <div>
+                                            <div class="d-flex align-items-center justify-content-between pb-3">
+                                                <span class="sec__font">Magazine . <span
+                                                        class="fst-italic high-light-txt">Science</span></span>
+                                                <i id="heartIcon"
+                                                    class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                            </div>
+                                            <div class="pb-3 pb-lg-0">
+                                                <h3 class="fs-1">Carving through the Black hole: An Epic Space Adventure
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <a href="#">Listen to the podcast <i
+                                                class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 p-0 mt-0">
+                                    <div class="imgBox rounded-4 overflow-hidden">
+                                        <img src="./assets/images/magazines-img1.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="card bg-card text-white d-flex flex-column justify-content-between  rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazine . <span
+                                                class="fst-italic high-light-txt">Culture</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Efter 30 år som skuespiller blev Niels Anders Thorn
+                                            ramt af dødsangst</h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/card-img5.png" alt="img">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between card bg-card text-white rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazine . <span
+                                                class="fst-italic high-light-txt">Culture</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Sauna, smøger og sejlivede rygter: Vi tog fra Aalborg
+                                            til Manhattan</h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="./assets/images/card-img6.png" alt="img">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card-wrapper card bg-card rounded-4 mx-1">
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/ad-img1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-md-4">
+                            <div class="row bg-card rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
+
+                                <div class="col-lg-8 p-0 mt-0">
+                                    <div class="imgBox rounded-4 overflow-hidden">
+                                        <img src="./assets/images/magazines-img2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="p-0 p-sm-4 h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="d-flex align-items-center justify-content-between pb-3">
+                                                <span class="sec__font">Magazine . <span
+                                                        class="fst-italic high-light-txt">Science</span></span>
+                                                <i id="heartIcon"
+                                                    class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                            </div>
+                                            <div class="pb-3 pb-lg-0">
+                                                <h3 class="fs-1">Carving through the Black hole: An Epic Space Adventure
+                                                </h3>
+
+                                            </div>
+                                        </div>
+                                        <a href="#">Listen to the podcast <i
+                                                class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between text-white card bg-card rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazies . <span
+                                                class="fst-italic high-light-txt">Culture</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Livet handler om: Ragù med oksespidsbryst og cremet
+                                            polenta
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 position-relative overflow-hidden">
+                                    <img src="./assets/images/card-img7.png" alt="img">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between card bg-card text-white rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazies . <span
+                                                class="fst-italic high-light-txt">Culture</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Danske brands kritiserer Wood Wood for manglende
+                                            betaling
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 position-relative overflow-hidden">
+                                    <img src="./assets/images/card-img8.png" alt="img">
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card-wrapper card bg-card rounded-4 mx-1">
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/ad-img5.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer id="footer" class="rounded-top-5 py-5 px-2 px-md-0">
+            <div class="container">
+                <div class="row gy-3 gy-md-0 py-5 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <h1 class="lh-1">Be The First</h1>
+                        <h1 class="sec__font lh-1 fst-italic">To Know.</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="fs-3 lh-base">Subscribe To Our News Letter</h4>
+                        <form action="" class="news_letter_form">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row gy-3 gy-md-0 pb-5 py-md-5 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <div class="footer_links">
+                            <a href="#" class="product-price">About Neomen</a>
+                            <a href="#" class="product-price">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_social_links">
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row flex-wrap-reverse gy-3 py-4 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <div class="CopyRight">
+                            <span class="product-type">© Neoman, Inc. 2023. We love our users!</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_links flex-row justify-content-md-end">
+                            <a href="#" class="product-type">Terms & Conditions</a>
+                            <a href="#" class="product-type ps-3">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__Box p-3 rounded-3" id="searchContainer">
+                <form class="d-flex news_letter_form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <button id="backToTop" onclick="topFunction()" class="rounded-circle">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </footer>
+        <div id="overlay"></div>
+        <div id="lightOverlay"></div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - NEO</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- coustom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper" class="position-relative w-100 overflow-hidden">
+
+        <!-- Start Header -->
+
+        <header class="header">
+            <nav class="navbar navbar-expand-xl py-4">
+                <div class="container">
+                    <a class="navbar-brand d-flex justify-content-between align-items-center order-xl-0"
+                        href="./index.html">
+                        <div class="imgBox">
+                            <img src="./assets/images/logo.svg" alt="logo">
+                        </div>
+                    </a>
+
+                    <div class="order-xl-2 nav-btns">
+                        <!-- <a href="#"> -->
+                        <button type="button" class="btn" id="searchIcon">
+                            <div class="imgBox">
+                                <img src="./assets/images/search.png" alt="search">
+                            </div>
+                        </button>
+
+                        <!-- </a> -->
+                        <button type="button" class="btn position-relative" id="cartBoxIcon">
+                            <div class="imgBox cart__icon">
+                                <img src="./assets/images/shopping_bag.png" alt="cart">
+                            </div>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                        </button>
+                        <div id="navLinks">
+
+                            <button class="btn">
+                                <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
+                            </button>
+                            <button type="button" class="btn" id="lang__btn">
+                                DA
+                                <i class="fa-solid fa-angle-down"></i>
+                                <div class="select__lang" id="lang__container">
+                                    <ul>
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Urdu</a></li>
+                                        <li><a href="#">Arabic</a></li>
+                                    </ul>
+                                </div>
+                            </button>
+                            <button type="button" class="btn">
+                                <a class="nav-link text-white" href="#">Login</a>
+                            </button>
+                            <button type="button" class="btn1">Bliv medlem for 0 kr.</button>
+
+
+                        </div>
+
+                    </div>
+
+                    <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse order-xl-1" id="navMenu">
+                        <ul class="navbar-nav m-auto text-center">
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Magasine.html">Artikler</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Videos_Archive.html">Videos</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Podcasts_Archive.html">Podcast</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="#">Events</a>
+                            </li>
+                            <li class="nav-item px-2 py-2">
+                                <a class="nav-link text-uppercase text-white" href="./Shop_Overview.html">Shop</a>
+                            </li>
+                            <div id="mobNavLinks" class="nav-btns pt-4">
+                                <button class="btn">
+                                    <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
+                                </button>
+                                <button type="button" class="btn" id="lang__btn">
+                                    DA
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <div class="select__lang" id="lang__container">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Urdu</a></li>
+                                            <li><a href="#">Arabic</a></li>
+                                        </ul>
+                                    </div>
+                                </button>
+
+
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="cart__box" id="cart__box">
+                <!-- <div class="cart__box__header d-flex justify-content-between align-items-center">
+                    <h4>Shopping Cart</h4>
+                    <a href="#" id="closeCart">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div> -->
+                <div class="cart__box__body">
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__item d-flex justify-content-between">
+                        <div class="cart__item__img">
+                            <img src="./assets/images/cart_img.png" alt="product">
+                        </div>
+                        <div class="cart__item__details">
+                            <h6>Cross-Bag Editorial</h6>
+                            <p class="product-price">small</p>
+                            <p>399 dkk</p>
+                        </div>
+                        <div class="cart__item__remove">
+                            <a href="#">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart__box__footer">
+                    <div class="cart__box__footer__total">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>798,00 dkk</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Levering</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>Gratis</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Pris i alt</p>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p>798,00 dkk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href=""><button class="btn2" type="button">Gå til kassen</button></a>
+                    <div class="text-center py-3">
+                        <a href="./Shop_Overview.html">Shop videre</a>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </header>
+
+        <!-- End Header -->
+
+
+        <!-- Banner -->
+        <div class="banner vh-100" style="background-image: url(./assets/images/banner-index.png);">
+            <div class="container h-100 d-flex justify-content-center align-items-center">
+                <div class="text-center">
+                    <h1 class="lh-1">The NEO</h1>
+                    <h1 class="sec__font lh-1 fst-italic">New Culture</h1>
+                    <p class="py-3"> Delve into the world of style, culture, and everything in between with us</p>
+                    <a href="#"><button type="button" class="btn2">Become a Member<i
+                                class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <main>
+
+
+            <section>
+                <div class="container-fluid">
+                    <div class="frame__wrapper">
+                        <div class="row flex-nowrap">
+                            <div class="col-2">
+                                <div class="imgBox overflow-hidden rounded-pill">
+                                    <img src="./assets/images/frame-img6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 ">
+                                                <div class="imgBox rounded-circle overflow-hidden">
+                                                    <img src="./assets/images/frame-img3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="imgBox rounded-pill overflow-hidden">
+                                                    <img src="./assets/images/frame-img1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="imgBox">
+                                                    <img src="./assets/images/frame-img4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="imgBox">
+                                                    <img src="./assets/images/frame-img2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="imgBox overflow-hidden rounded-pill">
+                                    <img src="./assets/images/frame-img6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 ">
+                                                <div class="imgBox rounded-circle overflow-hidden">
+                                                    <img src="./assets/images/frame-img7.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="imgBox rounded-pill overflow-hidden">
+                                                    <img src="./assets/images/frame-img4.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8 ">
+                                                <div class="imgBox rounded-pill overflow-hidden">
+                                                    <img src="./assets/images/frame-img4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="imgBox rounded-circle overflow-hidden">
+                                                    <img src="./assets/images/frame-img7.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="imgBox overflow-hidden rounded-pill">
+                                    <img src="./assets/images/frame-img6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 ">
+                                                <div class="imgBox rounded-circle overflow-hidden">
+                                                    <img src="./assets/images/frame-img3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="imgBox rounded-pill overflow-hidden">
+                                                    <img src="./assets/images/frame-img1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="imgBox">
+                                                    <img src="./assets/images/frame-img4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="imgBox">
+                                                    <img src="./assets/images/frame-img2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="tittle text-center pb-5">
+                        <h1 class="pb-2">Exclusive <span class="sec__font fst-italic">Insights</span></h1>
+                        <p>Take a look at the realm of ideas, <br> This is a place
+                            for creative insights and life-shaping perspectives.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="row flex-wrap-reverse bg-card rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
+                                <div class="col-lg-4">
+                                    <div class="row p-0 p-sm-4 h-100 flex-column justify-content-between">
+                                        <div>
+                                            <div class="pb-3 pb-lg-0">
+                                                <h3 class="fs-1">Magazines</h3>
+                                                <p>Get the latest publishments directly from our source</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">See magazines <i class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 p-0 mt-0">
+                                    <div class="imgBox rounded-4 overflow-hidden">
+                                        <img src="./assets/images/insight-img1.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="card bg-card text-white d-flex flex-column justify-content-between  rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazine . <span
+                                                class="fst-italic high-light-txt">Science</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">DR’s flotteste mand står op klokken halv tre om
+                                            natten</h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/card-img1.png" alt="img">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between card bg-card text-white rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Magazine . <span
+                                                class="fst-italic high-light-txt">Science</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Martin Scorsese: “I Have To Find Out Who The
+                                            Hell I Am.”</h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="./assets/images/card-img2.png" alt="img">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card-wrapper card bg-card rounded-4 mx-1">
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/ad-img1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-md-4">
+                            <div class="row bg-card rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
+
+                                <div class="col-lg-8 p-0 mt-0">
+                                    <div class="imgBox rounded-4 overflow-hidden">
+                                        <img src="./assets/images/insight-img2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="p-0 p-sm-4 h-100 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="pb-3 pb-lg-0">
+                                                <h3 class="fs-1">Videos</h3>
+                                                <p>Get the latest publishments directly from our source</p>
+                                            </div>
+                                        </div>
+                                        <a href="#">Explore our visual voyages <i
+                                                class="fa-solid fa-arrow-right ps-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between text-white card bg-card rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Video . <span
+                                                class="fst-italic high-light-txt">Lifestyle</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Neutra activated charcoal ham-mock tofu seitan.
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 card-img position-relative overflow-hidden">
+                                    <img src="./assets/images/card-img3.png" alt="img">
+                                    <div class="play d-flex align-items-center z-2">
+                                        <span>3m 52s</span>
+                                        <i class="fa-solid fa-circle-play play-icon ps-2" id="palyIcon"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div
+                                class="d-flex flex-column justify-content-between card bg-card text-white rounded-4 p-2 p-sm-1 mx-1">
+                                <div class="p-2 p-sm-3">
+                                    <div class="d-flex align-items-center justify-content-between pb-3">
+                                        <span class="sec__font">Video . <span
+                                                class="fst-italic high-light-txt">Lifestyle</span></span>
+                                        <i id="heartIcon" class="fa-regular fa-heart heart-icon pe-2 pe-sm-0"></i>
+                                    </div>
+                                    <div class="pb-3 pb-md-0">
+                                        <h4 class="fs-3 lh-base">Neutra activated charcoal ham-mock tofu seitan.
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="imgBox rounded-4 card-img position-relative overflow-hidden">
+                                    <img src="./assets/images/card-img4.png" alt="img">
+                                    <div class="play d-flex align-items-center z-2">
+                                        <span>3m 52s</span>
+                                        <i class="fa-solid fa-circle-play play-icon ps-2" id="palyIcon"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card-wrapper card bg-card rounded-4 mx-1">
+                                <div class="imgBox rounded-4 overflow-hidden">
+                                    <img src="./assets/images/ad-img2.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container ">
+                    <div class="disc__tittle text-center pb-5 position-relative">
+                        <h1>Discover The</h1>
+                        <h1 class="sec__font fst-italic">Lifestyle Products</h1>
+                    </div>
+
+                    <div class="row g-4 pb-4 products__arrival position-relative">
+                        <div class="col-12">
+                            <h4 class="fs-3">New <span class="sec__font fst-italic">Arrivals.</span></h4>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a href="#"><button type="button" class="btn2">New Arrivals<i
+                                        class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <h4 class="fs-3">Exclusive <span class="sec__font fst-italic">Sale.</span></h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="imgBox rounded-4 overflow-hidden">
+                                <img src="./assets/images/ad-img3.png" alt="img">
+                            </div>
+                            <div class="p-2 d-flex flex-column">
+                                <span class="product-type">Ads by</span>
+                                <span class="product-tittle">Calvin Klein</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box py-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                        <div class="sale-disc px-1 d-flex align-items-center justify-content-center">
+                                            <span class="product-type">-20%</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-type d-flex justify-content-between align-items-center pb-1">
+                                    <span>Unisex</span>
+                                    <span><del>450,00 dkk</del></span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box py-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                        <div class="sale-disc px-1 d-flex align-items-center justify-content-center">
+                                            <span class="product-type">-20%</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-type d-flex justify-content-between align-items-center pb-1">
+                                    <span>Unisex</span>
+                                    <span><del>450,00 dkk</del></span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box py-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                        <div class="sale-disc px-1 d-flex align-items-center justify-content-center">
+                                            <span class="product-type">-20%</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-type d-flex justify-content-between align-items-center pb-1">
+                                    <span>Unisex</span>
+                                    <span><del>450,00 dkk</del></span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box py-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                        <div class="sale-disc px-1 d-flex align-items-center justify-content-center">
+                                            <span class="product-type">-20%</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-type d-flex justify-content-between align-items-center pb-1">
+                                    <span>Unisex</span>
+                                    <span><del>450,00 dkk</del></span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="imgBox rounded-4 overflow-hidden">
+                                <img src="./assets/images/ad-img4.png" alt="img">
+                            </div>
+                            <div class="p-2 d-flex flex-column">
+                                <span class="product-type">Ads by</span>
+                                <span class="product-tittle">Toyota Denmark</span>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a href="#"><button type="button" class="btn2">Exclusive Sale<i
+                                        class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer id="footer" class="rounded-top-5 py-5 px-2 px-md-0">
+            <div class="container">
+                <div class="row gy-3 gy-md-0 py-5 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <h1 class="lh-1">Be The First</h1>
+                        <h1 class="sec__font lh-1 fst-italic">To Know.</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="fs-3 lh-base">Subscribe To Our News Letter</h4>
+                        <form action="" class="news_letter_form">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row gy-3 gy-md-0 pb-5 py-md-5 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <div class="footer_links">
+                            <a href="#" class="product-price">About Neomen</a>
+                            <a href="#" class="product-price">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_social_links">
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="social_icon">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row flex-wrap-reverse gy-3 py-4 justify-content-between align-items-center">
+                    <div class="col-md-4">
+                        <div class="CopyRight">
+                            <span class="product-type">© Neoman, Inc. 2023. We love our users!</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_links flex-row justify-content-md-end">
+                            <a href="#" class="product-type">Terms & Conditions</a>
+                            <a href="#" class="product-type ps-3">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__Box p-3 rounded-3" id="searchContainer">
+                <form class="d-flex news_letter_form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <button id="backToTop" onclick="topFunction()" class="rounded-circle">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </footer>
+        <div id="overlay"></div>
+        <div id="lightOverlay"></div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <!-- bootstrap js -->
+    <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- coustom js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
