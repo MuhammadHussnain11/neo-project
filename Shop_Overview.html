@@ -27,7 +27,7 @@
 
 <body>
 
-    <div id="wrapper" class="position-relative w-100 overflow-hidden">
+    <div id="wrapper">
 
         <!-- Start Header -->
 
@@ -50,7 +50,7 @@
                         </button>
 
                         <!-- </a> -->
-                        <button type="button" class="btn position-relative" id="cartBoxIcon">
+                        <button type="button" class="btn position-relative " id="cartBoxIcon">
                             <div class="imgBox cart__icon" >
                                 <img src="./assets/images/shopping_bag.png" alt="cart">
                             </div>
@@ -58,10 +58,10 @@
                         </button>
                         <div id="navLinks">
 
-                            <button class="btn">
+                            <button class="btn sun__icon__btn">
                                 <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                             </button>
-                            <button type="button" class="btn" id="lang__btn">
+                            <button type="button" class="btn lang-btn" id="lang__btn">
                                 DA
                                 <i class="fa-solid fa-angle-down"></i>
                                 <div class="select__lang" id="lang__container">
@@ -72,7 +72,7 @@
                                     </ul>
                                 </div>
                             </button>
-                            <button type="button" class="btn" id="user__profile">
+                            <button type="button" class="btn profile__btn" id="user__profile">
                                 <img src="./assets/images/profile.png" alt="profile-image">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <div class="profile__container" id="profile__container">
@@ -88,7 +88,7 @@
 
                     </div>
 
-                    <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -112,20 +112,30 @@
                                 <a class="nav-link text-uppercase text-white active" href="./Shop_Overview.html">Shop</a>
                             </li>
                             <div id="mobNavLinks" class="nav-btns pt-4">
-                                <button type="button" class="btn">
-                                    <select class="select-lang bg-transparent border-0 text-white" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected="1">DA</option>
-                                        <option value="2">EN</option>
-                                        <option value="3">AE</option>
-                                    </select>
-                                </button>
-                                <button class="btn" >
+                                <button class="btn sun__icon__btn">
                                     <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                                 </button>
-                                <button type="button" class="btn login__profile">
+                                <button type="button" class="btn lang-btn" id="smlang__btn">
+                                    DA
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <div class="smselect__lang" id="smlang__container">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Urdu</a></li>
+                                            <li><a href="#">Arabic</a></li>
+                                        </ul>
+                                    </div>
+                                </button>
+                                <button type="button" class="btn profile__btn" id="smuser__profile">
                                     <img src="./assets/images/profile.png" alt="profile-image">
                                     <i class="fa-solid fa-angle-down"></i>
+                                    <div class="smprofile__container" id="smprofile__container">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                            <li><a href="#"><i class="fa fa-gear"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-right-from-bracket"></i>Logout</a></li>
+                                        </ul>
+                                    </div>
                                 </button>
 
                             </div>
@@ -307,373 +317,11 @@
 
         <main>
 
-            <section class="py-5">
-                <div class="container">
-
-                    <div class="row g-4 pb-4 products__arrival position-relative">
-                        <div class="col-12">
-                            <h4 class="fs-3">New <span class="sec__font fst-italic">Arrivals.</span></h4>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a href="#"><button type="button" class="btn2">New Arrivals<i
-                                        class="fa-solid fa-arrow-right ps-3"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="accessories__sec py-5"
-                style="background-image: url(/assets/images/accessories-sec-bg1.png);">
-                <div class="container">
-                    <div class="row pb-5">
-                        <div class="col-12">
-                            <h1 class="lh-1">Inspirerende læsestof</h1>
-                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
-                            <a href="#" class="btn2">Explore Accessories<i class="fa-solid fa-arrow-right ps-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="accessories__sec py-5 my-5"
-                style="background-image: url(/assets/images/accessories-sec-bg2.png);">
-                <div class="container">
-                    <div class="row pb-5">
-                        <div class="col-12">
-                            <h1 class="lh-1">Inspirerende læsestof</h1>
-                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
-                            <a href="#" class="btn2">Explore Accessories<i class="fa-solid fa-arrow-right ps-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="accessories__sec py-5"
-                style="background-image: url(/assets/images/accessories-sec-bg3.png);">
-                <div class="container">
-                    <div class="row pb-5">
-                        <div class="col-12">
-                            <h1 class="lh-1">Inspirerende læsestof</h1>
-                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
-                            <a href="#" class="btn2">Explore Accessories<i class="fa-solid fa-arrow-right ps-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="product_card">
-                                <div class="imgBox rounded-1 overflow-hidden pb-2">
-                                    <img src="./assets/images/product-img.png" alt="">
-                                    <div class="sale">
-                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
-                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-type text-sm-center pb-1">
-                                    <span>Unisex</span>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <span class="product-tittle">Cross-Bag Editorial</span>
-                                    <span class="product-price">399,00 dkk</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-5">
+            <section class="py-5 new__arrival">
                 <div class="container">
                     <div class="row pb-4">
                         <div class="col-12">
-                            <h4 class="fs-3 pb-4">Exclusive <span class="sec__font fst-italic">Sale.</span></h4>
+                            <h4 class="fs-3 pb-4">New <span class="sec__font fst-italic">Arrivals.</span></h4>
                         </div>
                     </div>
 
@@ -812,6 +460,435 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 text-center">
+                        <a href="#"><button type="button" class="btn2">Nyheder<i
+                                    class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="accessories__sec py-md-5"
+                style="background-image: url(/assets/images/accessories-sec-bg1.png);">
+                <div class="container">
+                    <div class="row pb-5">
+                        <div class="col-12">
+                            <h1 class="lh-1">Inspirerende læsestof</h1>
+                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
+                            <a href="#"><button type="button" class="btn2">Explore Books<i
+                                class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accessories__sec py-md-5 my-5"
+                style="background-image: url(/assets/images/accessories-sec-bg2.png);">
+                <div class="container">
+                    <div class="row pb-5">
+                        <div class="col-12">
+                            <h1 class="lh-1">Inspirerende læsestof</h1>
+                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
+                            <a href="#"><button type="button" class="btn2">Explore Accessories<i
+                                class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden pb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accessories__sec py-md-5"
+                style="background-image: url(/assets/images/accessories-sec-bg3.png);">
+                <div class="container">
+                    <div class="row pb-5">
+                        <div class="col-12">
+                            <h1 class="lh-1">Inspirerende læsestof</h1>
+                            <h1 class="sec__font lh-1 fst-italic pb-5"> Find din bog</h1>
+                            <a href="#"><button type="button" class="btn2">Explore Accessories<i
+                                class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="row pb-4">
+                        <div class="col-12">
+                            <h4 class="fs-3 pb-4">Exclusive <span class="sec__font fst-italic">Sale.</span></h4>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 pb-4 slider__1">
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="product_card slick-slide">
+                                <div class="imgBox rounded-1 overflow-hidden mb-2">
+                                    <img src="./assets/images/product-img.png" alt="">
+                                    <div class="sale">
+                                        <div class="heart-box p-2 d-flex align-items-center justify-content-center">
+                                            <i id="heartIcon" class="fa-regular fa-heart heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-type text-sm-center pb-1">
+                                    <span>Unisex</span>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <span class="product-tittle">Cross-Bag Editorial</span>
+                                    <span class="product-price">399,00 dkk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="#"><button type="button" class="btn2">Shop tilbud<i
+                                    class="fa-solid fa-arrow-right ps-3"></i></button></a>
+                    </div>
 
                 </div>
 
@@ -822,7 +899,7 @@
 
         <footer id="footer" class="rounded-top-5 py-5 px-2 px-md-0">
             <div class="container">
-                <div class="row gy-3 gy-md-0 py-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-3 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <h1 class="lh-1">Be The First</h1>
                         <h1 class="sec__font lh-1 fst-italic">To Know.</h1>
@@ -840,7 +917,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row gy-3 gy-md-0 pb-5 py-md-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-4 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <div class="footer_links">
                             <a href="#" class="product-price">About Neomen</a>

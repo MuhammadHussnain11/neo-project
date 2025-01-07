@@ -17,7 +17,7 @@
 
 <body>
 
-    <div id="wrapper" class="position-relative w-100 overflow-hidden">
+    <div id="wrapper">
 
         <!-- Start Header -->
 
@@ -41,17 +41,17 @@
 
                         <!-- </a> -->
                         <button type="button" class="btn position-relative" id="cartBoxIcon">
-                            <div class="imgBox cart__icon">
+                            <div class="imgBox cart__icon" >
                                 <img src="./assets/images/shopping_bag.png" alt="cart">
                             </div>
                             <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
                         </button>
                         <div id="navLinks">
 
-                            <button class="btn">
+                            <button class="btn sun__icon__btn">
                                 <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                             </button>
-                            <button type="button" class="btn" id="lang__btn">
+                            <button type="button" class="btn lang-btn" id="lang__btn">
                                 DA
                                 <i class="fa-solid fa-angle-down"></i>
                                 <div class="select__lang" id="lang__container">
@@ -67,12 +67,11 @@
                             </button>
                             <button type="button" class="btn1">Bliv medlem for 0 kr.</button>
 
-
                         </div>
 
                     </div>
 
-                    <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -83,7 +82,8 @@
                                 <a class="nav-link text-uppercase text-white" href="./Magasine.html">Artikler</a>
                             </li>
                             <li class="nav-item px-2 py-2">
-                                <a class="nav-link text-uppercase text-white" href="./Videos_Archive.html">Videos</a>
+                                <a class="nav-link text-uppercase text-white"
+                                    href="./Videos_Archive.html">Videos</a>
                             </li>
                             <li class="nav-item px-2 py-2">
                                 <a class="nav-link text-uppercase text-white" href="./Podcasts_Archive.html">Podcast</a>
@@ -95,13 +95,13 @@
                                 <a class="nav-link text-uppercase text-white" href="./Shop_Overview.html">Shop</a>
                             </li>
                             <div id="mobNavLinks" class="nav-btns pt-4">
-                                <button class="btn">
+                                <button class="btn sun__icon__btn">
                                     <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                                 </button>
-                                <button type="button" class="btn" id="lang__btn">
+                                <button type="button" class="btn lang-btn" id="smlang__btn">
                                     DA
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <div class="select__lang" id="lang__container">
+                                    <div class="smselect__lang" id="smlang__container">
                                         <ul>
                                             <li><a href="#">English</a></li>
                                             <li><a href="#">Urdu</a></li>
@@ -109,7 +109,11 @@
                                         </ul>
                                     </div>
                                 </button>
-
+                                <button type="button" class="btn">
+                                    <a class="nav-link text-white" href="#">Login</a>
+                                </button>
+                                <button type="button" class="btn1">Bliv medlem for 0 kr.</button>
+                            
 
                             </div>
                         </ul>
@@ -230,7 +234,7 @@
                             </a>
                         </div>
                     </div>
-
+                    
                 </div>
                 <div class="cart__box__footer">
                     <div class="cart__box__footer__total">
@@ -248,7 +252,7 @@
                             </div>
                             <div class="col-6 text-end">
                                 <p>Gratis</p>
-                            </div>
+                            </div> 
                         </div>
                         <div class="row">
                             <div class="col-6">
@@ -260,15 +264,15 @@
                         </div>
                     </div>
                     <a href=""><button class="btn2" type="button">Gå til kassen</button></a>
-                    <div class="text-center py-3">
+                    <div  class="text-center py-3">
                         <a href="./Shop_Overview.html">Shop videre</a>
                     </div>
-
+                    
 
                 </div>
 
 
-
+                
             </div>
 
         </header>
@@ -291,7 +295,6 @@
         <!-- End Banner -->
 
         <main>
-
 
             <section>
                 <div class="container-fluid">
@@ -448,7 +451,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-4">
+                        <div class=" col-md-6 col-xl-4">
                             <div
                                 class="card bg-card text-white d-flex flex-column justify-content-between  rounded-4 p-2 p-sm-1 mx-1">
                                 <div class="p-2 p-sm-3">
@@ -497,8 +500,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 pt-md-4">
-                            <div class="row bg-card rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
+                        <div class="col-12 pt-4">
+                            <div class="row bg__card__third rounded-4 gy-3 gy-sm-0 p-2 p-sm-1 mx-1">
 
                                 <div class="col-lg-8 p-0 mt-0">
                                     <div class="imgBox rounded-4 overflow-hidden">
@@ -521,7 +524,7 @@
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div
-                                class="d-flex flex-column justify-content-between text-white card bg-card rounded-4 p-2 p-sm-1 mx-1">
+                                class="d-flex flex-column justify-content-between text-white card bg__card__third rounded-4 p-2 p-sm-1 mx-1">
                                 <div class="p-2 p-sm-3">
                                     <div class="d-flex align-items-center justify-content-between pb-3">
                                         <span class="sec__font">Video . <span
@@ -546,7 +549,7 @@
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div
-                                class="d-flex flex-column justify-content-between card bg-card text-white rounded-4 p-2 p-sm-1 mx-1">
+                                class="d-flex flex-column justify-content-between card bg__card__third text-white rounded-4 p-2 p-sm-1 mx-1">
                                 <div class="p-2 p-sm-3">
                                     <div class="d-flex align-items-center justify-content-between pb-3">
                                         <span class="sec__font">Video . <span
@@ -570,7 +573,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            <div class="card-wrapper card bg-card rounded-4 mx-1">
+                            <div class="card-wrapper card bg__card__third rounded-4 mx-1">
                                 <div class="imgBox rounded-4 overflow-hidden">
                                     <img src="./assets/images/ad-img2.png" alt="img">
                                 </div>
@@ -806,7 +809,7 @@
 
         <footer id="footer" class="rounded-top-5 py-5 px-2 px-md-0">
             <div class="container">
-                <div class="row gy-3 gy-md-0 py-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-3 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <h1 class="lh-1">Be The First</h1>
                         <h1 class="sec__font lh-1 fst-italic">To Know.</h1>
@@ -824,7 +827,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row gy-3 gy-md-0 pb-5 py-md-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-4 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <div class="footer_links">
                             <a href="#" class="product-price">About Neomen</a>

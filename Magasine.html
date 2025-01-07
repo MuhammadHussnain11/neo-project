@@ -17,7 +17,7 @@
 
 <body>
 
-    <div id="wrapper" class="position-relative w-100 overflow-hidden">
+    <div id="wrapper">
 
         <!-- Start Header -->
 
@@ -40,7 +40,7 @@
                         </button>
 
                         <!-- </a> -->
-                        <button type="button" class="btn position-relative" id="cartBoxIcon">
+                        <button type="button" class="btn position-relative " id="cartBoxIcon">
                             <div class="imgBox cart__icon" >
                                 <img src="./assets/images/shopping_bag.png" alt="cart">
                             </div>
@@ -48,10 +48,10 @@
                         </button>
                         <div id="navLinks">
 
-                            <button class="btn">
+                            <button class="btn sun__icon__btn">
                                 <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                             </button>
-                            <button type="button" class="btn" id="lang__btn">
+                            <button type="button" class="btn lang-btn" id="lang__btn">
                                 DA
                                 <i class="fa-solid fa-angle-down"></i>
                                 <div class="select__lang" id="lang__container">
@@ -62,7 +62,7 @@
                                     </ul>
                                 </div>
                             </button>
-                            <button type="button" class="btn" id="user__profile">
+                            <button type="button" class="btn profile__btn" id="user__profile">
                                 <img src="./assets/images/profile.png" alt="profile-image">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <div class="profile__container" id="profile__container">
@@ -78,7 +78,7 @@
 
                     </div>
 
-                    <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -86,7 +86,7 @@
                     <div class="collapse navbar-collapse order-xl-1" id="navMenu">
                         <ul class="navbar-nav m-auto text-center">
                             <li class="nav-item px-2 py-2">
-                                <a class="nav-link text-uppercase text-white active" href="./Magasine.html">Artikler</a>
+                                <a class="nav-link text-uppercase text-white" href="./Magasine.html">Artikler</a>
                             </li>
                             <li class="nav-item px-2 py-2">
                                 <a class="nav-link text-uppercase text-white"
@@ -99,23 +99,33 @@
                                 <a class="nav-link text-uppercase text-white" href="#">Events</a>
                             </li>
                             <li class="nav-item px-2 py-2">
-                                <a class="nav-link text-uppercase text-white" href="./Shop_Overview.html">Shop</a>
+                                <a class="nav-link text-uppercase text-white active" href="./Shop_Overview.html">Shop</a>
                             </li>
                             <div id="mobNavLinks" class="nav-btns pt-4">
-                                <button type="button" class="btn">
-                                    <select class="select-lang bg-transparent border-0 text-white" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected="1">DA</option>
-                                        <option value="2">EN</option>
-                                        <option value="3">AE</option>
-                                    </select>
-                                </button>
-                                <button class="btn" >
+                                <button class="btn sun__icon__btn">
                                     <i class="fa-regular fa-sun text-white sun_icon" id="themeIcon"></i>
                                 </button>
-                                <button type="button" class="btn login__profile">
+                                <button type="button" class="btn lang-btn" id="smlang__btn">
+                                    DA
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <div class="smselect__lang" id="smlang__container">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Urdu</a></li>
+                                            <li><a href="#">Arabic</a></li>
+                                        </ul>
+                                    </div>
+                                </button>
+                                <button type="button" class="btn profile__btn" id="smuser__profile">
                                     <img src="./assets/images/profile.png" alt="profile-image">
                                     <i class="fa-solid fa-angle-down"></i>
+                                    <div class="smprofile__container" id="smprofile__container">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                                            <li><a href="#"><i class="fa fa-gear"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-right-from-bracket"></i>Logout</a></li>
+                                        </ul>
+                                    </div>
                                 </button>
 
                             </div>
@@ -487,7 +497,7 @@
 
         <footer id="footer" class="rounded-top-5 py-5 px-2 px-md-0">
             <div class="container">
-                <div class="row gy-3 gy-md-0 py-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-3 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <h1 class="lh-1">Be The First</h1>
                         <h1 class="sec__font lh-1 fst-italic">To Know.</h1>
@@ -505,7 +515,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row gy-3 gy-md-0 pb-5 py-md-5 justify-content-between align-items-center">
+                <div class="row gy-3 gy-md-0 py-4 justify-content-between align-items-center">
                     <div class="col-md-4">
                         <div class="footer_links">
                             <a href="#" class="product-price">About Neomen</a>

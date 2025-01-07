@@ -8,9 +8,14 @@ const lightOverlay = document.getElementById('lightOverlay');
 var body = document.body;
 const themeIcon = document.querySelectorAll('#themeIcon');
 const userProfile = document.getElementById('user__profile');
+const smuserProfile = document.getElementById('smuser__profile');
 const profileContainer = document.getElementById('profile__container');
+const smprofileContainer = document.getElementById('smprofile__container');
 const langBtn = document.getElementById('lang__btn');
+const smlangBtn = document.getElementById('smlang__btn');
 const langContainer = document.getElementById('lang__container');
+const smlangContainer = document.getElementById('smlang__container');
+
 
 
 
@@ -23,7 +28,7 @@ searchIcon.addEventListener('click', () => {
   lightOverlay.classList.remove('show');
   profileContainer.classList.remove('show');
   langBtn.classList.remove('show');
-  body.style.overflow = 'hidden';
+  body.classList.toggle('overflow');
 });
 
 // Close the search container using overlay
@@ -31,7 +36,7 @@ overlay.addEventListener('click', () => {
   searchContainer.classList.remove('show');
   cartBox.classList.remove('show');
   overlay.classList.remove('show');
-  body.style.overflow = 'auto';
+  body.classList.remove('overflow');
 });
 
 
@@ -43,7 +48,7 @@ cartIcon.addEventListener('click', () => {
   lightOverlay.classList.remove('show');
   profileContainer.classList.remove('show');
   langBtn.classList.remove('show');
-  body.style.overflow = 'hidden';
+  body.classList.toggle('overflow');
 });
 
 
@@ -56,12 +61,23 @@ langBtn.addEventListener( 'click' , () => {
   cartBox.classList.remove('show');
   searchContainer.classList.remove('show');
 });
+// Show the language container
+smlangBtn.addEventListener( 'click' , () => {
+  smlangContainer.classList.toggle('show');
+  lightOverlay.classList.toggle('show');
+  smprofileContainer.classList.remove('show');
+  overlay.classList.remove('show');
+  cartBox.classList.remove('show');
+  searchContainer.classList.remove('show');
+});
 
 // Close the language container using overlay
 lightOverlay.addEventListener('click', () => { 
   lightOverlay.classList.remove('show');
   langContainer.classList.remove('show');
   profileContainer.classList.remove('show');
+  smlangContainer.classList.remove('show');
+  smprofileContainer.classList.remove('show');
 });
 
 
@@ -133,6 +149,49 @@ userProfile.addEventListener('click', () => {
   overlay.classList.remove('show');
   cartBox.classList.remove('show');
   searchContainer.classList.remove('show');
+});
+// Show the user profile
+smuserProfile.addEventListener('click', () => {
+  smprofileContainer.classList.toggle('show');
+  smlangContainer.classList.remove('show');
+  lightOverlay.classList.toggle('show');
+  overlay.classList.remove('show');
+  cartBox.classList.remove('show');
+  searchContainer.classList.remove('show');
+});
+
+
+$('.slider-main').slick({
+  slidesToShow: 1,
+  arrows: false,
+  asNavFor: '.slider-nav',
+  vertical: true,
+  // autoplay: true,
+  verticalSwiping: true,
+  centerMode: true
+});
+
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  asNavFor: '.slider-main',
+  vertical: true,
+  focusOnSelect: true,
+  // autoplay: false,
+  centerMode: true
+});
+
+$(window).on('resize orientationchange', function() {
+  if ($(window).width() > 1200) {
+    $('.slider-nav').slick('unslick');
+    $('.slider-nav').slick({
+      slidesToShow: 4,
+      asNavFor: '.slider-main',
+      vertical: true,
+      focusOnSelect: true,
+      autoplay: true,
+      centerMode: true
+    });
+  }
 });
 
 
