@@ -5,7 +5,7 @@ const cartIcon = document.getElementById('cartBoxIcon');
 const cartBox = document.getElementById('cart__box');
 const overlay = document.getElementById('overlay');
 const lightOverlay = document.getElementById('lightOverlay');
-var body = document.body;
+const body = document.body;
 const themeIcon = document.querySelectorAll('#themeIcon');
 const userProfile = document.getElementById('user__profile');
 const smuserProfile = document.getElementById('smuser__profile');
@@ -24,11 +24,11 @@ const smlangContainer = document.getElementById('smlang__container');
 searchIcon.addEventListener('click', () => {
   searchContainer.classList.toggle('show');
   overlay.classList.toggle('show');
+  body.classList.toggle('overflow');
   cartBox.classList.remove('show');
   lightOverlay.classList.remove('show');
   profileContainer.classList.remove('show');
   langBtn.classList.remove('show');
-  body.classList.toggle('overflow');
 });
 
 // Close the search container using overlay
@@ -43,12 +43,12 @@ overlay.addEventListener('click', () => {
 // Show the cart box
 cartIcon.addEventListener('click', () => {
   cartBox.classList.toggle('show');
-  searchContainer.classList.remove('show');
   overlay.classList.toggle('show');
+  body.classList.toggle('overflow');
+  searchContainer.classList.remove('show');
   lightOverlay.classList.remove('show');
   profileContainer.classList.remove('show');
   langBtn.classList.remove('show');
-  body.classList.toggle('overflow');
 });
 
 
@@ -144,8 +144,8 @@ playIcons.forEach(icon => {
 // Show the user profile
 userProfile.addEventListener('click', () => {
   profileContainer.classList.toggle('show');
-  langContainer.classList.remove('show');
   lightOverlay.classList.toggle('show');
+  langContainer.classList.remove('show');
   overlay.classList.remove('show');
   cartBox.classList.remove('show');
   searchContainer.classList.remove('show');
@@ -153,8 +153,8 @@ userProfile.addEventListener('click', () => {
 // Show the user profile
 smuserProfile.addEventListener('click', () => {
   smprofileContainer.classList.toggle('show');
-  smlangContainer.classList.remove('show');
   lightOverlay.classList.toggle('show');
+  smlangContainer.classList.remove('show');
   overlay.classList.remove('show');
   cartBox.classList.remove('show');
   searchContainer.classList.remove('show');
