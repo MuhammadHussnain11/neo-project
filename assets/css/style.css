@@ -215,11 +215,12 @@ p {
   z-index: 999999;
   right: 30px;
   bottom: 30px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
   border: 1px solid var(--secondary-color);
+  
 }
 #backToTop.show {
   visibility: visible;
@@ -227,7 +228,8 @@ p {
   transform: translateY(0);
 }
 #backToTop:hover {
-  background: linear-gradient(to top, #1e1a24, #a175ea);
+  /* background: linear-gradient(to top, #1e1a24, #a175ea); */
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
@@ -553,7 +555,7 @@ button {
 }
 
 button:active:not(.sun__icon__btn, .lang-btn, .profile__btn ) {
-  transform: scale(0.97);
+  transform: scale(0.97) !important;
 }
 
 #navLinks {
@@ -916,6 +918,9 @@ button:active:not(.sun__icon__btn, .lang-btn, .profile__btn ) {
 .accordion-flush>.accordion-item {
   border-bottom: 1px solid #ffffff2f !important;
 }
+.accordion-item:hover{
+  background-color: #1d1d1d;
+}
 .accordion-flush>.accordion-item:first-child {
   border-top: 1px solid #ffffff2f !important;
 }
@@ -924,6 +929,7 @@ button:active:not(.sun__icon__btn, .lang-btn, .profile__btn ) {
   outline: 0;
   box-shadow: 0 0 5px 0.15rem #ffffff2f;
   transform: scale(1);
+  background-color: #1d1d1d;
 }
 .accordion-button::after{
   content: none;
@@ -964,6 +970,17 @@ button:active:not(.sun__icon__btn, .lang-btn, .profile__btn ) {
   max-height: 718px !important;
   padding: 0 !important;
 }
+
+/* select{
+  color: var(--secondary-color);
+}
+select option{
+  background-color: var(--secondary-color) !important;
+  color: var(--body-bg) !important;
+}
+select option.active{
+  background-color: var(--body-bg) !important;
+} */
 
 
 
