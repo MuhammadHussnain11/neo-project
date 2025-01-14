@@ -918,7 +918,7 @@ button:active:not(.sun__icon__btn, .lang-btn, .profile__btn ) {
 .accordion-flush>.accordion-item {
   border-bottom: 1px solid #ffffff2f !important;
 }
-.accordion-item:hover{
+.accordion-body{
   background-color: #1d1d1d;
 }
 .accordion-flush>.accordion-item:first-child {
